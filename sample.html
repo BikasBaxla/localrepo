@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple CSS Flower</title>
     <style>
-        /* Center the flower on the page */
         body {
             margin: 0;
             height: 100vh;
@@ -15,7 +14,6 @@
             background-color: #f0fdf4;
         }
 
-        /* Container to align stem and blossom */
         .flower-container {
             position: relative;
             display: flex;
@@ -23,7 +21,6 @@
             align-items: center;
         }
 
-        /* The circular blossom wrapper */
         .blossom {
             position: relative;
             width: 150px;
@@ -31,7 +28,6 @@
             animation: spin 20s linear infinite;
         }
 
-        /* Shared petal styling */
         .petal {
             position: absolute;
             width: 60px;
@@ -42,14 +38,12 @@
             left: 45px;
         }
 
-        /* Rotate individual petals to form a circle */
         .petal:nth-child(1) { transform: rotate(0deg) translate(40px); }
         .petal:nth-child(2) { transform: rotate(72deg) translate(40px); }
         .petal:nth-child(3) { transform: rotate(144deg) translate(40px); }
         .petal:nth-child(4) { transform: rotate(216deg) translate(40px); }
         .petal:nth-child(5) { transform: rotate(288deg) translate(40px); }
 
-        /* Yellow center of the flower */
         .center {
             position: absolute;
             width: 50px;
@@ -62,7 +56,6 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
-        /* Green stem */
         .stem {
             width: 8px;
             height: 150px;
@@ -73,7 +66,6 @@
             z-index: -1;
         }
 
-        /* Leaf on the stem */
         .leaf {
             position: absolute;
             width: 40px;
@@ -85,7 +77,6 @@
             transform: rotate(-15deg);
         }
 
-        /* Subtle rotation animation for the petals */
         @keyframes spin {
             100% { transform: rotate(360deg); }
         }
@@ -94,7 +85,6 @@
 <body>
 
     <div class="flower-container">
-        <!-- Flower Head -->
         <div class="blossom">
             <div class="petal"></div>
             <div class="petal"></div>
@@ -104,7 +94,6 @@
             <div class="center"></div>
         </div>
         
-        <!-- Stem and Leaf -->
         <div class="stem">
             <div class="leaf"></div>
         </div>
